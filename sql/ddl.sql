@@ -1,1 +1,110 @@
+--Data Definition Language (ddl):
 
+create table categories(
+category_id integer primary key,
+category_name varchar,
+description text,
+is_active bool,
+created_at date
+);
+
+
+create table suppliers(
+supplier_id integer primary key,
+company_name varchar,
+company_first_name varchar,
+company_last_name varchar,
+contact_email varchar,
+country varchar,
+city varchar,
+phone varchar,lead_time_days integer,
+reliability_score numeric(3,1),
+is_active bool,
+onboarded_date date
+);
+
+
+create table products(
+product_id integer primary key,
+sku varchar,
+product_name varchar,
+brand varchar,
+category_id integer references categories(category_id),
+supplier_id integer references suppliers(supplier_id),
+unit_price numeric(8,2),
+cost_price numeric(8,2),
+stock_quantity integer,
+weight_kg numeric(5,2),
+avg_rating numeric(3,1),
+review_count integer,
+is_active bool,
+launch_date date
+);
+
+
+create table customers(
+customer_id integer primary key,
+first_name varchar,
+last_name varchar,
+email varchar,
+phone varchar,
+country varchar,
+country_code char(2),
+city varchar,
+loyalty_tier varchar,
+newsletter_subscribed bool,
+registration_date date
+);
+
+
+create table orders(
+order_id integer primary key,
+customer_id integer references customers(customer_id),
+order_date date,
+status varchar,
+payment_method varchar,
+shipping_method varchar,
+shipping_cost numeric(6,2),
+discount_pct numeric(5,2),
+coupon_code varchar,
+shipping_date date,
+delivery_date date,
+is_gift bool
+);
+
+
+create table order_items(
+order_item_id integer primary key,
+order_id integer references orders(order_id),
+product_id integer references products(product_id),
+quantity integer,
+unit_price numeric(8,2),
+line_discount_pct numeric(5,2),
+line_total numeric(10,2)
+);
+
+
+create table reviews(
+review_id integer primary key,
+product_id integer references products(product_id),
+customer_id integer references customers(customer_id),
+rating integer,
+review_body text,
+review_date date,
+verified_purchase bool,
+helpful_votes integer
+);
+
+
+create table returns(
+return_id integer primary key,
+order_item_id integer references order_items(order_item_id),
+order_id integer references orders(order_id),
+product_id integer references products(product_id),
+return_reason varchar,
+return_status varchar,
+request_date date,
+resolved_date date,
+refund_amount numeric(8,2),
+restocked bool
+)
