@@ -29,8 +29,8 @@ product_id integer primary key,
 sku varchar,
 product_name varchar,
 brand varchar,
-category_id integer references categories(category_id),
-supplier_id integer references suppliers(supplier_id),
+category_id integer,
+supplier_id integer,
 unit_price numeric(8,2),
 cost_price numeric(8,2),
 stock_quantity integer,
@@ -59,7 +59,7 @@ registration_date date
 
 create table orders(
 order_id integer primary key,
-customer_id integer references customers(customer_id),
+customer_id integer,
 order_date date,
 status varchar,
 payment_method varchar,
@@ -75,8 +75,8 @@ is_gift bool
 
 create table order_items(
 order_item_id integer primary key,
-order_id integer references orders(order_id),
-product_id integer references products(product_id),
+order_id integer,
+product_id integer,
 quantity integer,
 unit_price numeric(8,2),
 line_discount_pct numeric(5,2),
@@ -86,25 +86,25 @@ line_total numeric(10,2)
 
 create table reviews(
 review_id integer primary key,
-product_id integer references products(product_id),
-customer_id integer references customers(customer_id),
+product_id integer,
+order_id integer,
 rating integer,
 review_body text,
 review_date date,
 verified_purchase bool,
-helpful_votes integer
+helpful_votes integer,
+reported bool
 );
 
 
 create table returns(
 return_id integer primary key,
-order_item_id integer references order_items(order_item_id),
-order_id integer references orders(order_id),
-product_id integer references products(product_id),
+order_id integer,
+product_id integer,
 return_reason varchar,
 return_status varchar,
 request_date date,
 resolved_date date,
 refund_amount numeric(8,2),
-restocked bool
+notes text
 )
