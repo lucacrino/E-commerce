@@ -4,6 +4,7 @@ create table categories(
 category_id integer primary key,
 category_name varchar,
 description text,
+popularity_score numeric(3,2),
 is_active bool,
 created_at date
 );
