@@ -40,6 +40,11 @@ Analysis range from revenue time-series and customer segmentation to retention a
 
 
 
+# 💾 Analysis & SQL Techniques
+
+
+
+
 
 # 🛠️ Skills & Tools
 
