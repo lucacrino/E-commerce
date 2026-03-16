@@ -30,7 +30,7 @@ Analysis range from revenue time-series and customer segmentation to retention a
 | Table | Role | Rows | Primary Key | Notes |
 |-------|------|------|-------------|-------|
 | `categories` | Dimension | 12 | `category_id` | Static lookup table |
-| `suppliers` | Dimension | 52 | `supplier_id` | Companies providing the products |
+| `suppliers` | Dimension | 52 | `supplier_id` | Companies delivering the products |
 | `products` | Dimension | 500 | `product_id` | Online catalogue |
 | `customers` | Dimension | 1,000 | `customer_id` | Registered to the system |
 | `orders` | Fact | 7,000 | `order_id` | Central fact table |
