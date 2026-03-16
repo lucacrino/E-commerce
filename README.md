@@ -10,7 +10,7 @@ End-to-end SQL portfolio project on a European e-commerce dataset
 ## Table of Contents
 -  [Project Overview](#-project-overview)
 -  [Dataset Overview](#-dataset-overview)
--  [Analyses & SQL Techniques](#-analyses--sql-techniques)
+-  [Analysis & SQL Techniques](#-analysis--sql-techniques)
 -  [Key Findings](#-key-findings)
 -  [Skills & Tools](#-skills--tools)
 
@@ -25,14 +25,14 @@ Analyses range from revenue time-series and customer segmentation to retention a
 
 
 
-## 📊 Dataset Overview
+# 📊 Dataset Overview
 
 | Table | Role | Rows | Primary Key | Notes |
 |-------|------|------|-------------|-------|
 | `categories` | Dimension | 12 | `category_id` | Static lookup table |
 | `suppliers` | Dimension | 52 | `supplier_id` | Companies providing the products |
 | `products` | Dimension | 500 | `product_id` | Online catalogue |
-| `customers` | Dimension | 1,000 | `customer_id` | Central lookup table |
+| `customers` | Dimension | 1,000 | `customer_id` | Registered to the system |
 | `orders` | Fact | 7,000 | `order_id` | Central fact table |
 | `order_items` | Fact | 7,500 | `order_item_id` | Bridge: orders × products |
 | `reviews` | Fact | 4,000 | `review_id` | Product ratings by customers |
