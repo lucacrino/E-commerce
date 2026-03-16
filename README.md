@@ -39,3 +39,18 @@ Analyses range from revenue time-series and customer segmentation to retention a
 | `returns` | Fact | 1,200 | `return_id` | Return requests on line items |
 
 
+
+
+# 🛠️ Skills & Tools
+
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-18-4169E1?style=flat&logo=postgresql&logoColor=white)
+![Window Functions](https://img.shields.io/badge/Window_Functions-SQL-854F0B?style=flat)
+![CTEs](https://img.shields.io/badge/CTEs-SQL-993C1D?style=flat)
+![Data Analysis](https://img.shields.io/badge/Data_Analysis-SQL-185FA5?style=flat)
+![Customer Segmentation](https://img.shields.io/badge/Customer_Segmentation-SQL-533AB7?style=flat)
+![Indexing](https://img.shields.io/badge/Indexing-SQL-0F6E56?style=flat)
+![Data Quality](https://img.shields.io/badge/Data_Quality_Auditing-SQL-5F5E5A?style=flat)
+![Subqueries](https://img.shields.io/badge/Subqueries-SQL-993C1D?style=flat)
+
+
+
