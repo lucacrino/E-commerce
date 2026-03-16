@@ -1,2 +1,4 @@
 # E-commerce
-This project was designed to support a structured SQL portfolio item demonstrating proficiency across the full spectrum of analytical SQL
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-18-4169E1?style=flat&logo=postgresql&logoColor=white)
+![Tables](https://img.shields.io/badge/8-Tables-3B6D11?style=flat)
+![Rows](https://img.shields.io/badge/21264-Rows-7C3AED?style=flat)
