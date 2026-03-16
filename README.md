@@ -12,7 +12,7 @@ End-to-end SQL portfolio project on a European e-commerce dataset
 -  [Dataset Overview](#-dataset-overview)
 -  [Analysis & SQL Techniques](#-analysis--sql-techniques)
 -  [Key Findings](#-key-findings)
--  [Skills & Tools](#-skills--tools)
+-  [Skills & Tools](#%EF%B8%8F-skills--tools)
 
 
 
