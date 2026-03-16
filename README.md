@@ -40,7 +40,11 @@ Analysis range from revenue time-series and customer segmentation to retention a
 
 
 
-# 💾 Analysis & SQL Techniques
+# 📈 Analysis & SQL Techniques
+
+
+
+# 🎯 Key Findings
 
 
 
