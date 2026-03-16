@@ -48,8 +48,6 @@ Analysis range from revenue time-series and customer segmentation to retention a
 
 
 
-
-
 # 🛠️ Skills & Tools
 
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-18-4169E1?style=flat&logo=postgresql&logoColor=white)
