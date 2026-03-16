@@ -19,8 +19,8 @@ End-to-end SQL portfolio project on a European e-commerce dataset
 # 📍 Project Overview
 
 This project demonstrates end-to-end SQL analytics on a synthetic European e-commerce platform.
-The dataset spans 2021–2024, it covers 8 countries, 12 product categories, 52 suppliers and 1,000 customers.
-Analyses range from revenue time-series and customer segmentation to retention and scoring, all written in plain PostgreSQL.
+The dataset spans 2021–2024, it covers 8 countries, 12 product categories, 52 suppliers and 1 000 customers.
+Analysis range from revenue time-series and customer segmentation to retention and scoring, all written in plain PostgreSQL.
 
 
 
