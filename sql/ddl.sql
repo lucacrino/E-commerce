@@ -12,16 +12,15 @@ created_at date
 
 create table suppliers(
 supplier_id integer primary key,
-company_name varchar,
-company_first_name varchar,
-company_last_name varchar,
+supplier_name varchar,
+contact_name varchar,
 contact_email varchar,
 country varchar,
-city varchar,
-phone varchar,lead_time_days integer,
-reliability_score numeric(3,1),
+phone varchar,
+rating numeric(2,1),
+lead_time_days integer,
 is_active bool,
-onboarded_date date
+contract_start date
 );
 
 
