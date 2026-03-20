@@ -1,4 +1,4 @@
---What is the month-by-month gross revenue, number of orders, and average order value over the
+--What is the month-by-month gross revenue, number of orders and average order value over the
 --entire dataset period?
 
 --Note: according to the Accrual Accounting principles revenues are recognized when the good/service is earned, hence delivery_date is considered.
