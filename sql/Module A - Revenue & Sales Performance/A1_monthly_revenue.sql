@@ -1,1 +1,2 @@
-
+--What is the month-by-month gross revenue, number of orders, and average order value over the
+--entire dataset period?
