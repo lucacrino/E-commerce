@@ -1,4 +1,4 @@
---3 month rolling average of gross revenue. This smooths out seasonal spikes and reveals underlying growth trends.
+--Objective: 3 month rolling average of gross revenue. This smooths out seasonal spikes and reveals underlying growth trends.
 
 with monthly_revenue_cte as(
 select to_char(o.delivery_date,'Mon') as month_name, round(sum(quantity * unit_price),2) as monthly_revenue
