@@ -1,1 +1,1 @@
---Rank product categories by total revenue and compute a cumulative running total and cumulative percentage of overall revenue. Which categories account for the first 80% of revenue (Pareto)?
+--Objective: rank product categories by total revenue and compute a cumulative running total and cumulative percentage of overall revenue. Which categories account for the first 80% of revenue (Pareto)?
