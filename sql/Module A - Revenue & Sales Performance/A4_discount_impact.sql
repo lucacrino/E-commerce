@@ -10,19 +10,19 @@ with order_discount_cte as (
     from orders o
     natural join order_items oi
     where delivery_date is not null
-    group by 1, 2
+    group by 1,2
 ),
 
 discount_bucket_cte as (
     select
         case
-            when discount_pct = '0%'                            then '0%'
-            when discount_pct in ('5%', '10%')                  then '5-10%'
-            when discount_pct in ('15%', '20%')                 then '15-20%'
+            when discount_pct = '0%' then '0%'
+            when discount_pct in ('5%', '10%') then '5-10%'
+            when discount_pct in ('15%', '20%') then '15-20%'
             else '25%'
         end as discount_bucket,
-        sum(revenue)              as total_revenue,
-        count(*)                  as order_count,
+        sum(revenue) as total_revenue,
+        count(*) as order_count,
         round(avg(items_ordered), 2) as avg_items_per_order
     from order_discount_cte
     group by 1
@@ -36,4 +36,4 @@ order by
         when '5-10%'  then 2
         when '15-20%' then 3
         when '25%'    then 4
-    end;
+    end
