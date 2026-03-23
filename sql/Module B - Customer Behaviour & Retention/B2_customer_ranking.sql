@@ -1,0 +1,1 @@
+--Objective: For each country, rank customers by total spend and identify the top 3 spenders. Also compute each customer's share of their country's total revenue.
