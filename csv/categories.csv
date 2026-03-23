@@ -1,0 +1,31 @@
+category_id,category_name,description,popularity_score,is_active,created_at
+110001,Electronics,"Gadgets, devices and digital accessories",0.18,True,2020-05-11
+110002,Clothing,"Apparel, footwear and fashion accessories",0.16,True,2019-03-28
+110003,Home & Kitchen,Household essentials and cookware,0.13,True,2019-01-20
+110004,Books,Physical and educational books,0.1,True,2019-08-02
+110005,Sports & Outdoors,Fitness equipment and outdoor gear,0.09,True,2019-07-10
+110006,Beauty & Personal Care,"Skincare, haircare and grooming",0.08,True,2019-06-23
+110007,Toys & Games,Children toys and board games,0.07,True,2019-04-19
+110008,Food & Beverages,Specialty and gourmet food items,0.06,True,2019-03-21
+110009,Automotive,Car accessories and tools,0.05,True,2020-02-28
+110010,Garden & Tools,Gardening supplies and hand tools,0.04,True,2019-03-09
+110011,Pet Supplies,"Food, toys and accessories for pets",0.04,True,2020-04-03
+110012,Office Supplies,Stationery and office equipment,0.03,True,2019-11-24
+110013,Musical Instruments,Instruments and accessories,0.03,True,2019-01-25
+110014,Health & Wellness,"Vitamins, supplements and wellness",0.03,True,2019-01-24
+110015,Travel & Luggage,"Bags, suitcases and travel accessories",0.02,True,2019-03-14
+110016,Jewelry & Watches,Fashion and luxury timepieces,0.02,True,2019-06-19
+110017,Art & Crafts,Creative supplies and hobby kits,0.02,True,2019-06-30
+110018,Baby & Toddler,Products for newborns and toddlers,0.02,True,2020-01-28
+110019,Cameras & Photography,"DSLRs, lenses and photo accessories",0.01,True,2020-04-12
+110020,Video Games,"Consoles, games and controllers",0.01,True,2019-01-21
+110021,Software,Desktop and productivity software,0.01,True,2020-03-11
+110022,Furniture,Indoor and outdoor furniture,0.01,True,2019-06-04
+110023,Lighting,Indoor and smart lighting solutions,0.01,True,2020-05-19
+110024,Cleaning Supplies,Household cleaning products,0.01,True,2020-02-28
+110025,Safety & Security,"Locks, cameras and alarms",0.01,True,2019-11-22
+110026,Industrial & Scientific,Lab equipment and industrial tools,0.01,True,2019-06-21
+110027,Collectibles,Figurines and limited-edition items,0.01,True,2019-12-15
+110028,Handmade,Artisan and handcrafted products,0.01,True,2020-04-02
+110029,Subscription Boxes,Monthly curated product boxes,0.01,True,2019-08-05
+110030,Gift Cards,Digital and physical gift cards,0.01,True,2019-01-06

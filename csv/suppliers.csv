@@ -1,0 +1,81 @@
+supplier_id,supplier_name,contact_name,contact_email,country,phone,rating,lead_time_days,is_active,contract_start
+299458,NovaTech Distributors,Carmen Becker,carmen.becker@novatechdist.com,Sweden,+42790256940,3.2,8,True,2022-08-02
+220926,AlphaGoods Europe,Maria Lewandowski,maria.lewandowski@alphagoodseu.com,Austria,+42488690725,5.0,17,True,2018-05-27
+291506,MediterranEan Supply,Lorenzo Moreau,lorenzo.moreau@mediterranea.com,France,,3.5,15,True,2022-09-15
+255392,Nordic Wholesale,Marco Robert,marco.robert@nordicwholes.com,Belgium,+38925276600,2.8,14,True,2018-01-11
+244597,BritishTradeHub,Maria Schneider,maria.schneider@britishtrade.com,Belgium,+33771410971,4.1,20,True,2021-03-07
+236421,IbericaImports,Antoine Rossi,antoine.rossi@ibericaimpor.com,Austria,,4.8,29,False,2020-08-13
+220379,PolandDirect,Hans Greco,hans.greco@polanddirect.com,Spain,,3.7,3,False,2022-07-14
+228221,BeneluxLogistics,Giovanni Petit,giovanni.petit@beneluxlogis.com,Sweden,+47277303722,4.7,14,False,2022-08-03
+244118,TechSourceEU,Claire Diaz,claire.diaz@techsourceeu.com,UK,+41570406376,3.6,8,True,2020-11-16
+213396,FashionForwardEU,Giulia Hoffmann,giulia.hoffmann@fashionforwa.com,Austria,,4.1,8,True,2018-04-08
+212156,KitchenPro Suppliers,Ana Gallo,ana.gallo@kitchenprosu.com,Belgium,+37399012686,3.0,5,True,2022-11-10
+249797,BookBridgeEurope,Monika Martinez,monika.martinez@bookbridgeeu.com,Sweden,,4.1,12,True,2021-12-21
+212676,SportElite Wholesale,Matteo Dubois,matteo.dubois@sportelitewh.com,Italy,+42881913386,4.7,8,True,2022-07-25
+247052,BeautyHub International,Piotr Durand,piotr.durand@beautyhubint.com,UK,+35399085574,4.7,3,True,2022-09-06
+245082,ToyWorldEU,Stefano Marino,stefano.marino@toyworldeu.com,Belgium,+30200140141,4.6,6,True,2022-02-04
+279131,GourmetSelectEU,Emma Wisniewski,emma.wisniewski@gourmetselec.com,Italy,,3.5,30,True,2021-11-14
+234671,AutoPartsEurope,Julia Lewandowski,julia.lewandowski@autopartseur.com,Belgium,+45266211829,3.0,2,True,2022-08-12
+205695,GreenGarden Supplies,Elena Smith,elena.smith@greengardens.com,Italy,+31727255918,4.8,17,True,2022-04-27
+295647,PetCare Wholesale,Alessandro Fischer,alessandro.fischer@petcarewhole.com,Germany,+49172972420,3.1,4,False,2022-11-05
+260217,OfficeBasics EU,Anna Ricci,anna.ricci@officebasics.com,Austria,+32550139320,3.9,11,False,2019-09-27
+270284,MusicMakers Supply,Carmen Garcia,carmen.garcia@musicmakerss.com,Netherlands,+42240529481,3.2,11,False,2018-08-14
+216361,WellnessFirst Distributors,Marco Lindqvist,marco.lindqvist@wellnessfirs.com,Austria,,3.0,9,True,2020-12-20
+249615,LuggagePro Europe,Davide Martinez,davide.martinez@luggageproeu.com,Poland,+39269379374,3.9,10,True,2022-07-02
+210328,JewelryCraft EU,Marco Torres,marco.torres@jewelrycraft.com,Germany,+34383968123,2.8,18,True,2020-05-25
+272357,ArtSupplyHub,Thomas Taylor,thomas.taylor@artsupplyhub.com,Spain,+38642678844,4.8,28,True,2021-08-09
+238427,BabyEssentials EU,Sebastian Ricci,sebastian.ricci@babyessentia.com,Italy,+40927982963,4.9,6,True,2022-09-11
+282397,CameraWorld Wholesale,Ella Ferrari,ella.ferrari@cameraworldw.com,Germany,+32841976666,3.9,27,True,2022-09-13
+281070,GamersHub Europe,Simone Zielinski,simone.zielinski@gamershubeur.com,France,+31430989881,4.8,28,True,2021-01-16
+247400,SmartHomeEU,Thomas Martinez,thomas.martinez@smarthomeeu.com,Germany,+41937643439,4.7,20,True,2020-01-06
+275674,FurnitureDirectEU,Antoine Schneider,antoine.schneider@furnituredir.com,UK,+30292587044,3.3,30,True,2020-02-11
+225203,LightingPro Distributors,Friedrich Muller,friedrich.muller@lightingprod.com,Germany,+42141580226,3.1,27,True,2020-12-22
+292349,CleanChoice Supply,Miguel Hoffmann,miguel.hoffmann@cleanchoices.com,Spain,+30808705238,3.3,28,True,2020-05-17
+209116,SafetyFirst EU,Lucia Wisniewski,lucia.wisniewski@safetyfirste.com,Belgium,+40129635852,4.9,6,True,2020-04-04
+206006,ScientificTools EU,Andrea Thomas,andrea.thomas@scientificto.com,Austria,+43471178705,3.3,20,False,2018-12-26
+286673,CollectiblesWorld,Harry Weber,harry.weber@collectibles.com,Netherlands,+31861052404,3.8,26,True,2019-09-05
+229871,HandmadeHaven,Emily Zielinski,emily.zielinski@handmadehave.com,Germany,+40769108025,4.6,24,True,2022-04-25
+237930,SubscriptionBox HQ,Miguel Wojcik,miguel.wojcik@subscription.com,Poland,+42848621833,2.8,14,True,2021-03-23
+210458,GiftCard Solutions,Pierre Torres,pierre.torres@giftcardsolu.com,UK,,3.2,14,True,2020-09-28
+230512,EcoProducts EU,Tomasz Andersen,tomasz.andersen@ecoproductse.com,Sweden,+36648868899,4.8,26,True,2018-09-21
+213238,PremiumGoods Direct,Julia Williams,julia.williams@premiumgoods.com,Germany,+37822408848,4.5,5,True,2020-01-31
+249823,SpeedShip Wholesale,Monika Gallo,monika.gallo@speedshipwho.com,Sweden,+43776205431,4.3,13,True,2020-01-29
+236434,ValueDirect EU,Simone Rossi,simone.rossi@valuedirecte.com,Germany,+43334978881,4.9,17,True,2022-09-28
+259429,TrustSource Distributors,Anna Richard,anna.richard@trustsourced.com,Sweden,+34960514523,3.8,18,True,2021-10-07
+283320,GlobalLink Supply,Ingrid Lewandowski,ingrid.lewandowski@globallinksu.com,Belgium,+44270894498,3.7,9,True,2020-05-11
+247819,FastTrack Goods,Elise Larsen,elise.larsen@fasttrackgoo.com,Spain,,3.2,9,True,2022-08-06
+221319,MegaSupply Europe,Alessandro Durand,alessandro.durand@megasupplyeu.com,France,+37511281012,4.3,3,True,2020-10-25
+248520,QualityFirst EU,Maxime Hansen,maxime.hansen@qualityfirst.com,UK,+31322086735,3.5,25,True,2018-03-02
+246566,DirectShip EU,Charlotte Eriksson,charlotte.eriksson@directshipeu.com,Italy,+41420632895,4.6,27,True,2022-08-24
+227460,ProSource Wholesale,Nicolas Larsen,nicolas.larsen@prosourcewho.com,Spain,+38567975319,3.5,22,True,2021-06-10
+287841,EliteGoods EU,Marie Hansen,marie.hansen@elitegoodseu.com,France,,3.5,19,True,2018-09-18
+234993,NovaTech Distributors 2,Ella Durand,ella.durand@novatechdist.com,Sweden,+35153992714,3.3,15,True,2021-03-23
+291988,AlphaGoods Europe 2,Sebastian Kaminski,sebastian.kaminski@alphagoodseu.com,Netherlands,,3.8,12,True,2018-08-02
+289593,MediterranEan Supply 2,Chiara Romano,chiara.romano@mediterranea.com,Spain,+36121882877,3.1,16,True,2022-10-19
+284939,Nordic Wholesale 2,Emma Hansen,emma.hansen@nordicwholes.com,Netherlands,+41280162221,4.9,23,True,2019-05-24
+209358,BritishTradeHub 2,Miguel Thomas,miguel.thomas@britishtrade.com,Austria,+30434961542,4.8,13,True,2019-09-09
+279840,IbericaImports 2,Francesca Martinez,francesca.martinez@ibericaimpor.com,Germany,+39834717549,2.8,19,True,2020-12-14
+283227,PolandDirect 2,Chloe Lewandowski,chloe.lewandowski@polanddirect.com,Poland,+32643271261,2.5,14,True,2018-11-24
+222431,BeneluxLogistics 2,Marek Evans,marek.evans@beneluxlogis.com,Sweden,+34567600762,3.8,21,True,2022-07-31
+270010,TechSourceEU 2,Lucas Hansen,lucas.hansen@techsourceeu.com,UK,+48388187517,3.1,30,True,2021-11-01
+295568,FashionForwardEU 2,Anna Hansen,anna.hansen@fashionforwa.com,Austria,+49817461907,2.6,28,True,2022-02-23
+232087,KitchenPro Suppliers 2,Emma Davies,emma.davies@kitchenprosu.com,Netherlands,+40400281010,4.3,9,True,2022-05-25
+221417,BookBridgeEurope 2,Jean Martin,jean.martin@bookbridgeeu.com,Spain,+43624606470,3.1,16,True,2022-03-05
+260589,SportElite Wholesale 2,Piotr Esposito,piotr.esposito@sportelitewh.com,Germany,+39337937327,3.1,22,True,2022-01-10
+249735,BeautyHub International 2,Manon Brown,manon.brown@beautyhubint.com,UK,+47455184454,3.6,10,True,2019-01-10
+235382,ToyWorldEU 2,Jean Smith,jean.smith@toyworldeu2.com,Germany,+47918394863,3.0,24,True,2022-06-18
+283886,GourmetSelectEU 2,Julia Dubois,julia.dubois@gourmetselec.com,Spain,+39344258191,3.3,23,True,2020-05-02
+290198,AutoPartsEurope 2,Chiara Marino,chiara.marino@autopartseur.com,Belgium,+39848846217,4.1,25,True,2018-02-08
+273000,GreenGarden Supplies 2,Julia Nielsen,julia.nielsen@greengardens.com,Sweden,+44465830215,2.6,28,True,2018-07-23
+228785,PetCare Wholesale 2,George Larsen,george.larsen@petcarewhole.com,Germany,+48775862179,2.9,26,True,2020-08-01
+289733,OfficeBasics EU 2,Alessandro Martinez,alessandro.martinez@officebasics.com,Germany,+47920814900,4.0,20,True,2022-06-12
+242504,MusicMakers Supply 2,Charlotte Johansson,charlotte.johansson@musicmakerss.com,Sweden,+39731924051,3.3,20,True,2018-11-05
+207331,WellnessFirst Distributors 2,Thomas Becker,thomas.becker@wellnessfirs.com,Netherlands,+32268638768,3.9,6,True,2021-10-31
+230021,LuggagePro Europe 2,Monika Fernandez,monika.fernandez@luggageproeu.com,Italy,+37409350265,4.3,15,True,2019-12-27
+204207,JewelryCraft EU 2,Maria Meyer,maria.meyer@jewelrycraft.com,UK,+33684719405,2.9,9,True,2018-08-10
+241347,ArtSupplyHub 2,Elena Schmidt,elena.schmidt@artsupplyhub.com,Netherlands,+49904187231,4.8,15,True,2020-08-02
+252581,BabyEssentials EU 2,George Gonzalez,george.gonzalez@babyessentia.com,Belgium,+47630208579,4.0,29,True,2020-09-28
+235093,CameraWorld Wholesale 2,Klaus Romano,klaus.romano@cameraworldw.com,Germany,+37824022357,3.9,1,False,2020-04-17
+208675,GamersHub Europe 2,Chiara Schneider,chiara.schneider@gamershubeur.com,Sweden,+46799552991,3.2,19,True,2022-03-08
+227653,SmartHomeEU 2,Valentina Nielsen,valentina.nielsen@smarthomeeu2.com,Poland,+43457887167,2.8,6,True,2022-03-20
+274341,FurnitureDirectEU 2,Julia Wisniewski,julia.wisniewski@furnituredir.com,Belgium,,3.1,4,False,2021-06-09
