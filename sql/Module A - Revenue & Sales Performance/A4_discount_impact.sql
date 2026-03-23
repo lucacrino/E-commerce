@@ -2,11 +2,11 @@
 
 
 with order_discount_cte as (
-    select 
-        o.order_id, 
-        trunc(coalesce(discount_pct, 0)) || '%' as discount_pct, 
-        round(sum(line_total), 2) as revenue, 
-        count(order_item_id) as items_ordered
+select 
+    o.order_id, 
+    trunc(coalesce(discount_pct, 0)) || '%' as discount_pct, 
+    round(sum(line_total), 2) as revenue, 
+    count(order_item_id) as items_ordered
     from orders o
     natural join order_items oi
     where delivery_date is not null
