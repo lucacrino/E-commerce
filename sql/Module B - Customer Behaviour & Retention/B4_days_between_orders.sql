@@ -1,0 +1,1 @@
+--Objective: For each customer with more than one order, compute the number of days between each consecutive pair of orders. What is the average inter-order gap by loyalty tier?
