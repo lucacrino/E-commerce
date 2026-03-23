@@ -1,1 +1,5 @@
 --Objective: rank product categories by total revenue and compute a cumulative running total and cumulative percentage of overall revenue. Which categories account for the first 80% of revenue (Pareto)?
+--Note: ~15 rows reference product_ids absent from products. 
+
+
+
