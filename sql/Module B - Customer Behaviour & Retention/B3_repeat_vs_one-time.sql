@@ -2,11 +2,11 @@
 
 with customer_cte as(
     select 
-	  c.customer_id,
-	  count(*) as no_of_customers,
-	  sum(line_total) as total_revenue
+	c.customer_id,
+	count(*) as no_of_customers,
+	sum(line_total) as total_revenue
     from 
-	  orders o
+	orders o
     inner join customers c           
     on o.customer_id = c.customer_id 
     inner join order_items oi
