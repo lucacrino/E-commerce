@@ -1,5 +1,5 @@
 --Objective: rank product categories by total revenue and compute a cumulative running total and cumulative percentage of overall revenue. Which categories account for the first 80% of revenue (Pareto)?
---Note: ~15 rows reference product_ids absent from products. delivery_date is the filter to check whether the revenue is due or not (see A1 note).
+--Note: ~15 rows reference product_ids absent from products. delivery_date is the filter checking whether the revenue is due or not (see A1 note).
 
 with revenue_by_category_cte as(
 select category_name, sum(line_total) as category_revenue
