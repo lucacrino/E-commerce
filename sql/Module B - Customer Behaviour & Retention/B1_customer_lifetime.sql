@@ -7,7 +7,7 @@ inner join customers c           --Remove customer_ids not in customers
 on o.customer_id = c.customer_id 
 inner join order_items oi
 on o.order_id = oi.order_id
-where status <> 'cancelled'
+where status = 'delivered'
 group by 1,2,3,4
 order by total_spend desc
 limit 20
