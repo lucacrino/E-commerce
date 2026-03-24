@@ -53,6 +53,7 @@ table, joined to `customers`, `order_items`, and ultimately `products` → `cate
 
 
 
+
 # 🎯 Key Findings
 
 
