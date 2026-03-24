@@ -58,7 +58,7 @@ table, joined to `customers`, `order_items`, and ultimately `products` → `cate
 
 | # | Analysis | SQL Concepts |
 |---|----------|--------------|
-| A1 | Monthly revenue & order volume trend | `DATE_TRUNC` · `GROUP BY` · `AVG` |
+| A1 | Monthly revenue & order volume trend | `EXTRACT` · `GROUP BY` · `AVG` |
 | A2 | Revenue by country and loyalty tier | multi-table JOIN · segmentation |
 | A3 | 3-month rolling revenue average | `AVG() OVER` · `ROWS BETWEEN` |
 | A4 | Discount impact on revenue | `CASE WHEN` · `COALESCE` |
