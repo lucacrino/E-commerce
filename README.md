@@ -71,7 +71,7 @@ table, joined to `customers`, `order_items`, and ultimately `products` → `cate
 
 | # | Analysis | SQL Concepts |
 |---|----------|--------------|
-| B1 | Customer lifetime value ranking | `LEFT JOIN` · `SUM` · `ORDER BY` |
+| B1 | Customer lifetime value ranking | `INNER JOIN` · `SUM` · `ORDER BY` |
 | B2 | Top spenders per country | `RANK() OVER (PARTITION BY)` |
 | B3 | Repeat vs one-time purchasers | `CASE WHEN` · CTE · segment % |
 | B4 | Days between consecutive orders | `LAG()` · date subtraction |
