@@ -9,7 +9,7 @@ End-to-end SQL portfolio project on a European e-commerce dataset
 
 ## Table of Contents
 -  [Project Overview](#-project-overview)
--  [Schema & ERD](#-schema---ERD)
+-  [Schema & ERD](#%EF%B8%8F-schema--erd)
 -  [Dataset Overview](#-dataset-overview)
 -  [Analysis & SQL Techniques](#-analysis--sql-techniques)
 -  [Key Findings](#-key-findings)
@@ -25,6 +25,11 @@ Analysis range from revenue time-series and customer segmentation to retention a
 
 
 # 🗺️ Schema & ERD
+
+
+The schema follows a star/snowflake hybrid. `orders` is the central fact
+table, joined to `customers`, `order_items`, and ultimately `products` → `categories` + `suppliers`.
+
 
 
 
