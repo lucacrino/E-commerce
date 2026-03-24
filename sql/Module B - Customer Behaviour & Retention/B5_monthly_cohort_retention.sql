@@ -55,8 +55,7 @@ group by 1,2
 select
 cohort_month,
 month_number,
-retained_customers,
-first_value(retained_customers) over (partition by cohort_month order by month_number) as cohort_size,    
+retained_customers,    
 round(
       100.0 * retained_customers
       / first_value(retained_customers) over (partition by cohort_month order by month_number),1) as retention_pct      
