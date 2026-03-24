@@ -57,7 +57,7 @@ cohort_month,
 month_number,
 retained_customers,    
 round(
-      100.0 * retained_customers
+      100 * retained_customers
       / first_value(retained_customers) over (partition by cohort_month order by month_number),1) as retention_pct      
 from cte4
 order by cohort_month, month_number
