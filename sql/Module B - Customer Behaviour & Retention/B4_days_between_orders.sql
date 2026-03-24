@@ -22,6 +22,8 @@ where days_diff >= 1
 )
 
 select loyalty_tier,
-round(avg(days_diff),2) as avg_days_between_orders
+round(avg(days_diff),2) as avg_days_between_orders,
+percentile_cont(0.5) within group (order by days_diff) as median_days_between_orders
 from filtered_cte
 group by 1
+order by array_position(array['platinum','gold','silver','bronze'],loyalty_tier)
