@@ -1,5 +1,7 @@
 --Objective: Group customers by the month of their first order (cohort). For each cohort, track how many customers placed at least one order in each subsequent month (months 0, 1, 2, ... from cohort month). Express retention as a percentage of the original cohort size.
 
+
+--For each customer select the timestamp of the first order
 with first_order_cte as (
     select
     c.customer_id,
@@ -10,6 +12,7 @@ with first_order_cte as (
     group by c.customer_id
 ),
 
+--Re-join to orders so each row now has the order_date and the first order timestamp
 cte2 as (
     select
     f.customer_id,
@@ -20,6 +23,8 @@ cte2 as (
     where o.status = 'delivered'
 ),
 
+
+--For each customer compute the time interval between the first order timestamp and the order_date
 cte3 as(
 select 
 customer_id,
@@ -28,6 +33,9 @@ age(order_month,cohort_month) as interval_diff
 from cte2
 ),
 
+
+--Convert interval_diff in months, format cohort_month and 
+--for each cohort_month check how many customers placed at least one order in month_number months
 cte4 as(
 select
 to_char(cohort_month,'YYYY-MM') as cohort_month,
