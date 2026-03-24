@@ -9,6 +9,7 @@ End-to-end SQL portfolio project on a European e-commerce dataset
 
 ## Table of Contents
 -  [Project Overview](#-project-overview)
+-  [Schema & ERD](#-schema---ERD)
 -  [Dataset Overview](#-dataset-overview)
 -  [Analysis & SQL Techniques](#-analysis--sql-techniques)
 -  [Key Findings](#-key-findings)
