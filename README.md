@@ -24,6 +24,9 @@ The dataset spans 2021–2024, it covers 8 countries, 12 product categories, 52 
 Analysis range from revenue time-series and customer segmentation to retention and scoring, all written in plain PostgreSQL.
 
 
+# 🗺️ Schema & ERD
+
+
 
 
 # 📊 Dataset Overview
