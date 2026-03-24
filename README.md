@@ -95,7 +95,7 @@ table, joined to `customers`, `order_items`, and ultimately `products` → `cate
 | C8 | Full data quality audit | `UNION ALL` · anti-join · logic checks |
 | C9 | Refund value at risk by supplier | multi-CTE · rolling `SUM` · rank |
 
-</det
+</details>
 
 # 🎯 Key Findings
 
