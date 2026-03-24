@@ -17,9 +17,9 @@ group by 1
 --Apply ntile(4) for each dimension independently
 cte2 as(
 select *,
-ntile(4) over(order by recency_days desc) as r_score,
-ntile(4) over(order by frequency) as f_score,
-ntile(4) over(order by monetary) as m_score
+ntile(4) over(order by recency_days desc) as r_score,  --old orders are assigned low point
+ntile(4) over(order by frequency) as f_score,          --high frequency is assigned high point
+ntile(4) over(order by monetary) as m_score            --high monetary is assigned high point
 from cte1
 )
 
