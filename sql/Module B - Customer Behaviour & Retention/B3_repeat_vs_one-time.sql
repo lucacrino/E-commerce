@@ -26,7 +26,7 @@ sum(total_revenue) as total_segment_revenue,
 sum(no_of_customers) as customer_count,
 round(sum(total_revenue)/(select
                           sum(total_revenue)
-					                from customer_cte)*100,2) as pct_of_total_revenue
+					      from customer_cte)*100,2) as pct_of_total_revenue
 from customer_cte
 group by 1
 order by array_position(array['one_time_buyer','2 delivered orders','3+ delivered orders'], case when no_of_customers = 1 then 'one_time_buyer'
