@@ -20,7 +20,7 @@ with country_ranking_cte as(
 
 select *,
 round(total_spend / (select sum(total_spend) 
-               from country_ranking_cte cte1
-			   where cte1.country = cte.country) * 100,2) as pct_of_country_revenue
+                     from country_ranking_cte cte1
+                     where cte1.country = cte.country) * 100,2) as pct_of_country_revenue
 from country_ranking_cte cte
 where country_rank <= 3
