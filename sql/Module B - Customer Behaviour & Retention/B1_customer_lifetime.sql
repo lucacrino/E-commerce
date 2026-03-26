@@ -8,7 +8,7 @@ select
     count(*) as order_count
 from 
     orders o
-    inner join customers c           --Remove customer_ids not in customers
+    inner join customers c             --Remove customer_ids not in customers
     on o.customer_id = c.customer_id 
     inner join order_items oi
     on o.order_id = oi.order_id
