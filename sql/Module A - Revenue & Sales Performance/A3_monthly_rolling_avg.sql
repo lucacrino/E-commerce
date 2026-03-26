@@ -10,5 +10,7 @@ with monthly_revenue_cte as(
     order by extract(month from o.delivery_date)
 )
 
-select *, round(avg(monthly_revenue) over(rows between 2 preceding and current row),2) as rolling_3m_avg
-from monthly_revenue_cte
+select 
+*, round(avg(monthly_revenue) over(rows between 2 preceding and current row),2) as rolling_3m_avg
+from 
+monthly_revenue_cte
