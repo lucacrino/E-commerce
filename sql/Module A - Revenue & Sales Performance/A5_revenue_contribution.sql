@@ -19,7 +19,8 @@ dense_rank() over(order by category_revenue desc) as revenue_rank,
 sum(category_revenue) over(order by category_revenue desc) as cumulative_revenue, 
 round(category_revenue/(select sum(category_revenue) from revenue_by_category_cte)*100,2) as revenue_pct,
 round(sum(category_revenue) over(order by category_revenue desc)/(select sum(category_revenue) from revenue_by_category_cte)*100,2) as cumulative_pct
-from revenue_by_category_cte
+from 
+revenue_by_category_cte
 
 
 
