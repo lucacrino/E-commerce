@@ -1,6 +1,5 @@
 --Objective: Identify all active products that have never received a single review. Include the product name, category, supplier, launch date, and number of times it has been ordered.
 
-
 select 
 product_name,
 category_name,
