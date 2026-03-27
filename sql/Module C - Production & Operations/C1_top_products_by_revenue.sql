@@ -1,5 +1,5 @@
 --Objective: List the top 20 products by total revenue. For each product, include the category, total units sold, gross margin (unit_price - cost_price), and margin percentage. Which high-revenue products have the lowest margins?
---Note: ~15 rows reference product_ids absent from products
+--Note: within order_items ~15 rows reference product_ids absent from products
 
 
 --Create a cte with delivered orders whose product_ids are recorded in products (see Note) + rough measures
