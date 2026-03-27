@@ -1,1 +1,2 @@
 --Objective: For each product category, calculate the return rate (returns / items sold). Then break down each category's returns by return reason to identify the dominant root cause per category.
+
