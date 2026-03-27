@@ -11,6 +11,7 @@ with monthly_revenue_cte as(
 )
 
 select 
-*, round(avg(monthly_revenue) over(rows between 2 preceding and current row),2) as rolling_3m_avg
+*, 
+round(avg(monthly_revenue) over(rows between 2 preceding and current row),2) as rolling_3m_avg
 from 
 monthly_revenue_cte
