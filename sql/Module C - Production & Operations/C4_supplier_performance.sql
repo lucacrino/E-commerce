@@ -16,8 +16,9 @@ group by
 1
 ),
 
+--Return rate by supplier  
 return_rates as(
-select
+
 
 )
 
