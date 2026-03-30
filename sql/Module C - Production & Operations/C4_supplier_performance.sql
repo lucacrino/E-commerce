@@ -52,7 +52,6 @@ group by 1,2
 )
 
 
-
 select
 sr.supplier_name,
 sr.total_revenue,
