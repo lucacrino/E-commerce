@@ -20,7 +20,7 @@ group by 1,2
 ),
 
   
---Return rate by supplier  
+--Supplier return rate on a product basis  
 return_cte as(
 select 
 s.supplier_id,
