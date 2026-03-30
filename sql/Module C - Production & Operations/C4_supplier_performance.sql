@@ -7,7 +7,7 @@ select
 s.supplier_id,
 supplier_name,
 sum(line_total) as total_revenue,
-round(avg(100 * (p.unit_price - p.cost_price) / p.unit_price), 2) as avg_unit_margin_pct,
+round(avg(100.0 * (p.unit_price - p.cost_price) / p.unit_price), 2) as avg_unit_margin_pct,
 count(distinct case when p.is_active = true 
       then p.product_id end) as active_products
 from
