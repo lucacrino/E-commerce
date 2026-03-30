@@ -15,7 +15,7 @@ suppliers s
 inner join products p on s.supplier_id = p.supplier_id
 inner join order_items oi on oi.product_id = p.product_id
 left join orders o on oi.order_id = o.order_id
-where status not in ('cancelled','returned')
+where status not in ('returned')
 group by 1,2
 ),
 
