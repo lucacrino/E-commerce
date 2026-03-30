@@ -5,7 +5,7 @@ with cte1 as(
 select
 shipping_method,
 round(avg(delivery_date - order_date),2) as avg_delivery_days,
-count(oi.order_item_id) as total_delivered_orders,
+count(distinct o.order_id) as total_delivered_orders,
 round(avg(shipping_cost),2) as avg_shipping_cost,
 sum(line_total) as total_revenue
 from
@@ -21,7 +21,7 @@ group by 1
 cte2 as(
 select
 shipping_method,
-count(r.return_id) as returned_orders
+count(distinct r.order_id) as returned_orders
 from
 order_items oi
 inner join orders o on oi.order_id = o.order_id
@@ -41,6 +41,10 @@ from
 cte1 c1
 left join cte2 c2 on c1.shipping_method = c2.shipping_method
 order by 2 desc
+
+
+
+
 
 
 
