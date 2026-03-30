@@ -25,7 +25,7 @@ return_cte as(
 select 
 s.supplier_id,
 supplier_name,
-round(100 * count(r.return_id) / nullif(count(oi.order_item_id),0),2) as return_rate_pct
+round(100.0 * count(r.return_id) / nullif(count(oi.order_item_id),0),2) as return_rate_pct
 from 
 products p
 inner join suppliers s on s.supplier_id = p.supplier_id
