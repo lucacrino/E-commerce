@@ -1,7 +1,7 @@
 --Objective: Build a scorecard for each active supplier showing: total revenue generated through their products, average product margin, number of active products, weighted average product rating, return rate across their products, and a revenue rank.
 
 
---Revenue and margin(%) by supplier
+--Revenue and margin by supplier
 with suppliers_revenue as(
 select
 s.supplier_id,
