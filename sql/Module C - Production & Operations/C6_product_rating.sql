@@ -24,7 +24,7 @@ group by 1,2
 order by 1,2
 )
 
---The interval between one row and the subsequent is not fixed, hence this is not a 3 months rolling average
+--The interval between one row and the subsequent is not fixed, hence this is not a general rolling average
 select 
 mr.*,
 round(avg(monthly_avg_rating) over(partition by mr.product_name 
