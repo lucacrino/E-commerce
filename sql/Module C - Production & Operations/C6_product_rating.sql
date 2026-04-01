@@ -1,0 +1,1 @@
+--Objective: For the top 10 most-reviewed products, compute the 3-month rolling average rating over time. Has sentiment improved or declined since launch?
