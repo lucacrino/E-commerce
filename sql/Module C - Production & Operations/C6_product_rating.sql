@@ -10,6 +10,7 @@ order by review_count desc
 limit 10
 ),
 
+	
 monthly_rating as(
 select
 t.product_name,
