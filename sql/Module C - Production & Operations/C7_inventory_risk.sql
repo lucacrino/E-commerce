@@ -28,7 +28,9 @@ p.product_name,
 c.category_name,
 p.stock_quantity,
 round(stock_quantity * cost_price,2) as stock_value,
-ls.quantity_sold
+ls.quantity_sold,
+dense_rank() over(order by stock_quantity desc) as stock_rank,
+dense_rank() over(order by quantity_sold desc) as sales_rank
 from products p
 left join categories c on p.category_id = c.category_id
 left join percentile_per_category ppc on ppc.category_id = p.category_id and p.stock_quantity > ppc.pc75
