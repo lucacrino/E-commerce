@@ -51,8 +51,6 @@ table, joined to `customers`, `order_items`, and ultimately `products` → `cate
 
 # 📈 Analysis & SQL Techniques
 
-
-
 <details>
 <summary>Module A — Revenue & Sales Performance</summary>
 
@@ -98,6 +96,20 @@ table, joined to `customers`, `order_items`, and ultimately `products` → `cate
 </details>
 
 # 🎯 Key Findings
+
+### Revenue & Sales Performance
+
+
+
+
+### Customer Behaviour & Retention
+
+
+
+
+### Product & Operations
+
+
 
 
 
