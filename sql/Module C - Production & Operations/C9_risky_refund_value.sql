@@ -45,7 +45,7 @@ order by 1,2
 )
 
 
---These two queries target different type of analysis, for this reason they are splitted:
+--These two queries target different types of analysis, for this reason they are splitted:
 
 select *
 from rolling_refund
