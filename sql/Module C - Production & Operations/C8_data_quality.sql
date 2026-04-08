@@ -33,9 +33,8 @@ where c.customer_id is null
 ),
 
 
-
 --(2)
-with discount_mismatch as(
+discount_mismatch as(
 select
 'discount mismatch' as check_name,
 'order_items' as affected_table,
@@ -54,16 +53,43 @@ where delivery_date < shipping_date
 ),
 
 
-
 --(3)
 duplicate_email as(
-
+select
+'duplicate customer emails' as check_name,
+'customers' as affected_table,
+count(*) as issue_count
+from customers c1
+inner join customers c2 on c1.customer_id <> c2.customer_id and c1.first_name = c2.first_name and c1.last_name = c2.last_name and c1.email <> c2.email
 ),
-
 
 
 --(4)
 active_with_no_stock as(
-
+select
+'products out of stock' as check_name,
+'products' as affected_table,
+count(*) as issue_count
+from products
+where stock_quantity = 0 and is_active = true
 )
+
+
+select *
+from orphaned_FK
+
+union all
+
+select *
+from discount_mismatch
+
+union all
+
+select *
+from duplicate_email
+
+union all
+
+select *
+from active_with_no_stock
 
