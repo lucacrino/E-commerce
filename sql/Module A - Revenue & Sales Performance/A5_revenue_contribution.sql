@@ -10,7 +10,7 @@ with revenue_by_category_cte as(
     on c.category_id = p.category_id
     left join orders o
     on oi.order_id = o.order_id
-    where p.product_id is not null and delivery_date is not null       --see Note for 'where' condition
+    where p.product_id is not null and o.status not in ('cancelled','returned')       --see Note for 'where' condition
     group by 1
 )
 
