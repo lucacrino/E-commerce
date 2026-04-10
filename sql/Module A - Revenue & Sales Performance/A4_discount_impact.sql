@@ -9,7 +9,7 @@ select
     count(order_item_id) as items_ordered
     from orders o
     natural join order_items oi
-    where delivery_date is not null
+    where o.status not in ('cancelled','returned')
     group by 1,2
 ),
 
