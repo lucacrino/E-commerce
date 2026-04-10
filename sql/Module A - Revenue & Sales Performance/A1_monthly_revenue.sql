@@ -1,6 +1,4 @@
 --Objective: what is the month-by-month gross revenue, number of orders and average order value over the entire dataset period?
---Note: according to the Accrual Accounting principles revenues are recognized when the good/service is earned (delivery_date is not null, hence the good has been delivered) and not when cash is paid (order_date).
---      More complex queries will consider 'processing' orders as well for the sake of simplicity.
 
 select to_char(o.delivery_date,'Mon'), 
 count(*) as total_orders, round(sum(quantity * unit_price),2) as gross_revenue, 
@@ -9,7 +7,7 @@ from
 orders o
 natural join order_items oi
 where 
-delivery_date is not null
+o.status not in ('cancelled','returned')
 group by 
 to_char(o.delivery_date,'Mon'), extract(month from o.delivery_date) 
 order by 
