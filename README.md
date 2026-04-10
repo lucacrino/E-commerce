@@ -98,7 +98,7 @@ table, joined to `customers`, `order_items`, and ultimately `products` → `cate
 # 🎯 Key Findings
 
 ### Revenue & Sales Performance
-
+Over a 3-year operating period, the business achieved: 6 555 orders, €3.65M in gross revenues and 595 orders/month on average.
 
 
 
