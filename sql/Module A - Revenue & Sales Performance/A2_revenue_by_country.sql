@@ -9,6 +9,6 @@ from
 customers c
 natural join orders o
 left join order_items oi on o.order_id = oi.order_id
-where delivery_date is not null  
+where o.status not in ('cancelled','returned')  
 group by 1,2
 order by 1, array_position(array['platinum','gold','silver','bronze'],loyalty_tier)
