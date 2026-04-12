@@ -101,6 +101,7 @@ table, joined to `customers`, `order_items`, and ultimately `products` → `cate
 -  Over a 4-year operating period, the business achieved: 6 555 orders, €3.6M in gross revenues and 595 orders/month on average.
 -  The 3-month rolling average analysis reveals a concerning insight: revenues tend to drop between October and November by ~14%. To address the problem, right after adjusting the Q4 forecasting model, suppose a customer-segmentation: could a targeted marketing campaign for Halloween products be a reasonable option for young buyers? If older, what about seasonal discounts for more suitable categories (Health & Wellness, Home & Kitchen, Books...)?
 -  Beauty & Personal Care, Home & Kitchen and Electronics are the 3 top categories generating 34% of total revenues (€1.2M). Strategic partnerships with suppliers for exclusive products? Introduction of private labels to boost brand-loyalty? Introduction of 'Gift with Purchase'?
+-  43% of orders accounting for €2.5M are in the '0% discount_bucket' range and there seems to be no correlation between the discount percentage and the average items per order. Is discounting perceived as low quality? Right products discounted at the wrong time? 
 
 
 
