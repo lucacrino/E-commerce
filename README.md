@@ -98,7 +98,9 @@ table, joined to `customers`, `order_items`, and ultimately `products` → `cate
 # 🎯 Key Findings
 
 ### Revenue & Sales Performance
-Over a 3-year operating period, the business achieved: 6 555 orders, €3.65M in gross revenues and 595 orders/month on average.
+-  Over a 4-year operating period, the business achieved: 6 555 orders, €3.65M in gross revenues and 595 orders/month on average.
+-  The 3-month rolling average analysis reveals a concerning insight: revenues tend to drop between October and November by ~14%. To address the problem, right after adjusting the Q4 forecasting model, suppose a customer-segmentation: could a targeted marketing campaign for Halloween products be a reasonable option for young buyers? If older, what about seasonal discounts for utility & gifting?
+-  
 
 
 
