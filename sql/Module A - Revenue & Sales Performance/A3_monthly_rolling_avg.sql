@@ -5,7 +5,7 @@ with monthly_revenue_cte as(
     round(sum(quantity * unit_price),2) as monthly_revenue
     from orders o
     natural join order_items oi
-    where o.status not in ('cancelled','returned')
+    where o.status = 'delivered'
     group by to_char(o.delivery_date,'Mon'), extract(month from o.delivery_date)
     order by extract(month from o.delivery_date)
 )
