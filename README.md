@@ -107,7 +107,7 @@ table, joined to `customers`, `order_items`, and ultimately `products` → `cate
 
 ### Customer Behaviour & Retention
 -  In the Netherlands and Sweden, the most loyal customers account for more than 6% of total national revenue. Evaluate the feasibility of implementing a loyalty program to boost customer retention via rewards.
--  The buyer segment '3+ delivered orders' is responsible for 93.75% of total orders, this is a positive aspect signaling strong customer retention.   
+-  The buyer segment '3+ delivered orders' is responsible for 93.75% of total orders, this is a positive aspect signaling strong customer retention. However the average interval between subsequent orders is approximately 290 days, with the loyalty tier showing no significant impact on this metric.
 
 
 
