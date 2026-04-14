@@ -112,8 +112,7 @@ table, joined to `customers`, `order_items`, and ultimately `products` → `cate
 
 
 ### Product & Operations
--  Within the Top 20 products by total revenue there are 5 with intriguing margin percentage: Raw Honey 500g (56.51%), Fleece Hoodie (57.21%), Italian Extra Virgin Olive Oil 750ml (58.93%), Bluetooth Speaker (60.16%), Hyaluronic Acid Moisturiser (60.82%). The firm is able to capture the consumers' willingness to pay effectively and should investigate why these items are so popular.
-
+-  Within the Top 20 products by total revenue there are 5 with intriguing margin percentage: Raw Honey 500g (56.51%), Fleece Hoodie (57.21%), Italian Extra Virgin Olive Oil 750ml (58.93%), Bluetooth Speaker (60.16%), Hyaluronic Acid Moisturiser (60.82%). The firm effectively captures consumer willingness to pay and should analyze the drivers of this popularity to guide future product enhancements.
 
 
 
