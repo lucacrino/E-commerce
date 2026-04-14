@@ -115,7 +115,8 @@ table, joined to `customers`, `order_items`, and ultimately `products` → `cate
 -  Within the Top 20 products by total revenue there are 5 with intriguing margin percentage: Raw Honey 500g (56.51%), Fleece Hoodie (57.21%), Italian Extra Virgin Olive Oil 750ml (58.93%), Bluetooth Speaker (60.16%), Hyaluronic Acid Moisturiser (60.82%). The firm effectively captures consumer willingness to pay and should analyze the drivers of this popularity to guide future product enhancements.
 -  'Clothing' and 'Sports & Outdoors' have a return rate of 33.79% and 33.09%, respectively; the dominant root cause is 'not_as_described'. Update the catalogue pictures? Detailed specifications? Contextual sizing/scale?
 -  With a weighted average rating of 4.5/5.0, 'AlphaGoods Europe 2' is currently the highest-performing supplier. Given this metric, the extension of the existing contract is recommended to ensure continued operational stability.
--  Analysis of logistics data reveals that the shipping method categorized as "Economy" currently incurs the highest average shipping cost. Inefficient routing? Service level agreements? 
+-  Analysis of logistics data reveals that the shipping method categorized as "Economy" currently incurs the highest average shipping cost. Inefficient routing? Service level agreements?
+-  Query C7 highlights slow-moving, high-inventory risk items with relative stock value. These items represent a significant capital lock-up and contribute disproportionately to ongoing warehouse carrying costs. Move the inventory to secondary channels (e.g. liquidating platforms)? Dynamic price adjustments?
 
 
 # 🛠️ Skills & Tools
