@@ -112,7 +112,7 @@ table, joined to `customers`, `order_items`, and ultimately `products` → `cate
 
 
 ### Product & Operations
-
+-  ff
 
 
 
