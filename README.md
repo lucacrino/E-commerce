@@ -57,7 +57,7 @@ table, joined to `customers`, `order_items`, and ultimately `products` → `cate
 | # | Analysis | SQL Concepts |
 |---|----------|--------------|
 | A1 | Monthly revenue & order volume trend | `EXTRACT` · `GROUP BY` · `AVG` |
-| A2 | Revenue by country and loyalty tier | multi-table JOIN · segmentation |
+| A2 | Revenue by country and loyalty tier | multi-table `JOIN` · segmentation |
 | A3 | 3-month rolling revenue average | `AVG() OVER` · `ROWS BETWEEN` |
 | A4 | Discount impact on revenue | `CASE WHEN` · `COALESCE` |
 | A5 | Pareto revenue by category | `SUM() OVER` · `RANK()` · running % |
@@ -71,9 +71,9 @@ table, joined to `customers`, `order_items`, and ultimately `products` → `cate
 |---|----------|--------------|
 | B1 | Customer lifetime value ranking | `INNER JOIN` · `SUM` · `ORDER BY` |
 | B2 | Top spenders per country | `RANK() OVER (PARTITION BY)` |
-| B3 | Repeat vs one-time purchasers | `CASE WHEN` · CTE · segment % |
+| B3 | Repeat vs one-time purchasers | `CASE WHEN` · `CTE` · segment % |
 | B4 | Days between consecutive orders | `LAG()` · date subtraction |
-| B5 | Monthly cohort retention | CTE chaining · cohort logic |
+| B5 | Monthly cohort retention | `CTE` chaining · cohort logic |
 | B6 | RFM customer segmentation | `NTILE(4)` · multi-CTE · `CASE` |
 
 </details>
@@ -83,7 +83,7 @@ table, joined to `customers`, `order_items`, and ultimately `products` → `cate
 
 | # | Analysis | SQL Concepts |
 |---|----------|--------------|
-| C1 | Top products by revenue & margin | 3-table JOIN · derived columns |
+| C1 | Top products by revenue & margin | 3-table `JOIN` · derived columns |
 | C2 | Products never reviewed | `LEFT JOIN IS NULL` · anti-join |
 | C3 | Return rate by category & reason | `NULLIF` · `HAVING` · `GROUP BY` |
 | C4 | Supplier performance scorecard | multi-CTE · `DENSE_RANK()` |
@@ -91,7 +91,7 @@ table, joined to `customers`, `order_items`, and ultimately `products` → `cate
 | C6 | Product rating drift over time | `ROWS BETWEEN` · `PARTITION BY` |
 | C7 | Inventory risk — slow movers | `PERCENTILE_CONT` · `NTILE` |
 | C8 | Full data quality audit | `UNION ALL` · anti-join · logic checks |
-| C9 | Refund value at risk by supplier | multi-CTE · rolling `SUM` · rank |
+| C9 | Refund value at risk by supplier | multi-CTE · rolling `SUM` · `RANK()` |
 
 </details>
 
