@@ -1,4 +1,4 @@
-# 🛒E-commerce
+# 🛒 E-commerce
 
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-18-4169E1?style=flat&logo=postgresql&logoColor=white)
 ![Tables](https://img.shields.io/badge/8-Tables-3B6D11?style=flat)
