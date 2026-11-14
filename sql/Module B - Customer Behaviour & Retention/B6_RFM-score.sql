@@ -41,7 +41,7 @@ cte3 as (
 select 
     rfm_segment,
     count(*) as customer_count,
-    round(count(*) * 100.0 / sum(count(*)) over (), 2) as percentage_composition
+    round(count(*) * 100.0 / sum(count(*)) over (), 2) as pct_composition
 from cte3
 group by rfm_segment
 order by customer_count desc;
