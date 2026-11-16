@@ -16,7 +16,7 @@ from
 order_items oi
 inner join orders o on o.order_id = oi.order_id             --These inner joins return the table containing only delivered orders whose products exist in products (see Note)
 inner join products p on oi.product_id = p.product_id         
-left join categories c on p.category_id = c.category_id     --No need to inner join categories as well, all rows in products have a not null category_id
+left join categories c on p.category_id = c.category_id     --No need to inner join categories as well, all rows in products have a non null category_id
 where o.status = 'delivered'
 group by 1,2,3,4
 )
