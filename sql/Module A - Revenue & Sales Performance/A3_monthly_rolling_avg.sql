@@ -4,7 +4,7 @@ with monthly_revenue_cte as(
     select to_char(o.delivery_date,'Mon') as month_name, 
     round(sum(quantity * unit_price),2) as monthly_revenue
     from orders o
-    natural join order_items oi
+    join order_items oi on o.order_id = oi.order_id
     where o.status = 'delivered'
     group by to_char(o.delivery_date,'Mon'), extract(month from o.delivery_date)
     order by extract(month from o.delivery_date)
