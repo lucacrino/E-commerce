@@ -4,24 +4,15 @@
 ![Tables](https://img.shields.io/badge/8-Tables-3B6D11?style=flat)
 ![Rows](https://img.shields.io/badge/21%2c264-Rows-7C3AED?style=flat)
 
-Intro
+Overview
 
 
 ## Table of Contents
--  [Project Overview](#-project-overview)
 -  [Schema & ERD](#%EF%B8%8F-schema--erd)
 -  [Dataset Overview](#-dataset-overview)
 -  [Analysis & SQL Techniques](#-analysis--sql-techniques)
 -  [Key Findings](#-key-findings)
 -  [Skills & Tools](#%EF%B8%8F-skills--tools)
-
-
-
-# 📍 Project Overview
-
-This project demonstrates end-to-end SQL analytics on a synthetic European e-commerce platform.
-The dataset spans 2021–2024, it covers 8 countries, 12 product categories, 52 suppliers and 1 000 customers.
-Analysis range from revenue time-series and customer segmentation to retention and scoring, all written in plain PostgreSQL.
 
 
 # 🗺️ Schema & ERD
