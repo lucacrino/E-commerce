@@ -8,7 +8,7 @@ select
     round(sum(line_total), 2) as revenue, 
     count(order_item_id) as items_ordered
     from orders o
-    natural join order_items oi
+    join order_items oi o.order_id = oi.order_id
     where o.status not in ('cancelled','returned')
     group by 1,2
 ),
