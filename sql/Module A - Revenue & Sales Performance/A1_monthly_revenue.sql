@@ -5,7 +5,8 @@ count(distinct o.order_id) as total_orders, round(sum(quantity * unit_price),2) 
 round(avg(line_total),2) as avg_order_value
 from 
 orders o
-natural join order_items oi
+join order_items oi 
+on o.order_id = oi.order_id
 where 
 o.status not in ('cancelled','returned')
 group by 
