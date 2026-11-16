@@ -31,7 +31,7 @@ unit_price - cost_price as gross_margin,
 round(100*(unit_price-cost_price)/unit_price,2) as margin_pct
 from cte1
 order by 4 desc
-limit 20
+limit 10
 
 
 
