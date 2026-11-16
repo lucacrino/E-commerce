@@ -64,8 +64,7 @@ table, joined to `customers`, `order_items`, and ultimately `products` → `cate
 | B2 | Top spenders per country | `RANK() OVER (PARTITION BY)` |
 | B3 | Repeat vs one-time purchasers | `CASE WHEN` · `CTE` · segment % |
 | B4 | Days between consecutive orders | `LAG()` · date subtraction |
-| B5 | Monthly cohort retention | `CTE` chaining · cohort logic |
-| B6 | RFM customer segmentation | `NTILE(4)` · multi-CTE · `CASE` |
+| B5 | RFM customer segmentation | `NTILE(4)` · multi-CTE · `CASE` |
 
 </details>
 
