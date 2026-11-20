@@ -130,10 +130,6 @@ The SQL files in `sql/queries/` remain the **single source of truth**. The noteb
 | C3 · Return rate by category | Horizontal bar | `outputs/return_rate.png` |
 
 
-<!-- Embed the best 3-4 charts below once exported, for example: -->
-<!-- ![Cohort retention](outputs/b5_cohort_retention.png) -->
-<!-- ![Rolling revenue](outputs/a3_rolling_revenue.png) -->
-
 ---
 
 <a id="key-findings"></a>
@@ -165,7 +161,7 @@ ecommerce-sql-analytics/
 │   ├── ddl.sql
 │   │   
 │   ├── Module A - Revenue & Sales Performance/
-|   |    └── A*_query_name.sql
+|   |   └── A*_query_name.sql
 |   |
 |   ├── Module B - Customer Behaviour & Retention
 |   |   └── B*_query_name.sql
