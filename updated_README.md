@@ -53,7 +53,7 @@ table, joined to `customers`, `order_items`, and ultimately `products` →
 |-------|------|------|-------------|-------|
 | `categories` | Dimension | 12 | `category_id` | Static lookup table |
 | `suppliers` | Dimension | 52 | `supplier_id` | Companies delivering the products |
-| `products` | Dimension | 500 | `product_id` | 15 ghost IDs in order_items |
+| `products` | Dimension | 500 | `product_id` | Online catalogue |
 | `customers` | Dimension | 1,000 | `customer_id` | 40 ghost IDs in orders |
 | `orders` | Fact | 7,000 | `order_id` | Central fact table |
 | `order_items` | Fact | 7,500 | `order_item_id` | Bridge: orders × products |
