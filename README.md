@@ -87,26 +87,6 @@ table, joined to `customers`, `order_items`, and ultimately `products` → `cate
 
 # 🎯 Key Findings
 
-### Revenue & Sales Performance
--  Over a 4-year operating period, the business achieved: 6 555 orders, €3.6M in gross revenues and 595 orders/month on average.
--  The 3-month rolling average analysis reveals a concerning insight: revenues tend to drop between October and November by ~14%. To address the problem, right after adjusting the Q4 forecasting model, suppose a customer-segmentation: could a targeted marketing campaign for Halloween products be a reasonable option for young buyers? If older, what about seasonal discounts for more suitable categories (Health & Wellness, Home & Kitchen, Books...)?
--  Beauty & Personal Care, Home & Kitchen and Electronics are the 3 top categories generating 34% of total revenues (€1.2M). Strategic partnerships with suppliers for exclusive products? Introduction of private labels to boost brand-loyalty? Introduction of 'Gift with Purchase'?
--  43% of orders accounting for €2.5M are in the '0% discount_bucket' range and there seems to be no correlation between the discount percentage and the average items per order. Is discounting perceived as low quality? Right products discounted at the wrong time?
-  
-
-
-### Customer Behaviour & Retention
--  In the Netherlands and Sweden, the most loyal customers account for more than 6% of total national revenue. Evaluate the feasibility of implementing a loyalty program to boost customer retention via rewards.
--  The buyer segment '3+ delivered orders' is responsible for 93.75% of total orders, this is a positive aspect signaling strong customer retention. However the average interval between subsequent orders is approximately 290 days, with the loyalty tier showing no significant impact on this metric. How can the company increase the purchase frequency? Customized lifecycle email/sms flow? Milestone bonuses? Flash-sales encouraging customers to 'check-in' on company's website?
-
-
-
-### Product & Operations
--  Within the Top 20 products by total revenue there are 5 with intriguing margin percentage: Raw Honey 500g (56.51%), Fleece Hoodie (57.21%), Italian Extra Virgin Olive Oil 750ml (58.93%), Bluetooth Speaker (60.16%), Hyaluronic Acid Moisturiser (60.82%). The firm effectively captures consumer willingness to pay and should analyze the drivers of this popularity to guide future product enhancements.
--  'Clothing' and 'Sports & Outdoors' have a return rate of 33.79% and 33.09%, respectively; the dominant root cause is 'not_as_described'. Update the catalogue pictures? Detailed specifications? Contextual sizing/scale?
--  With a weighted average rating of 4.5/5.0, 'AlphaGoods Europe 2' is currently the highest-performing supplier. Given this metric, the extension of the existing contract is recommended to ensure continued operational stability.
--  Analysis of logistics data reveals that the shipping method categorized as "Economy" currently incurs the highest average shipping cost. Inefficient routing? Service level agreements?
--  Query C7 highlights slow-moving, high-inventory risk items with relative stock value. These items represent a significant capital lock-up and contribute disproportionately to ongoing warehouse carrying costs. Move the inventory to secondary channels (e.g. liquidating platforms)? Dynamic price adjustments?
 
 
 # 🛠️ Skills & Tools
