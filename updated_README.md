@@ -212,9 +212,9 @@ psql -d ecommerce_portfolio -f sql/queries/b5_cohort_retention.sql
 **Step 2 — Create your credentials file.** Copy `credentials_example.env`, rename the copy to `credentials.env`, and fill in your own values:
 
 ```
-DB_HOST=localhost
-DB_PORT=5432
-DB_NAME=ecommerce_portfolio
+DB_HOST=host
+DB_PORT=port_number
+DB_NAME=database_name
 DB_USER=your_user
 DB_PASSWORD=your_password
 ```
