@@ -172,7 +172,7 @@ ecommerce-sql-analytics/
 |   |
 │   └── Module C - Production & Operations
 |       └── C*_query_name.sql   
-└── outputs/                    # Exported charts (PNG)
+└── outputs/                    # Exported charts (.png)
  
 ```
 
