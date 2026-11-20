@@ -139,8 +139,6 @@ The SQL files in `sql/queries/` remain the **single source of truth**. The noteb
 <a id="key-findings"></a>
 ## 💡 Key Findings
 
-> Run the analyses and replace each placeholder with 2–3 findings that include a number and a "so what".
-
 ### Revenue & Sales Performance
 - ...
 
@@ -160,23 +158,25 @@ ecommerce-sql-analytics/
 ├── README.md
 ├── analysis.ipynb              # Python pipeline: SQL → DataFrames → charts
 ├── credentials_example.env     # Template for database credentials
-├── assets/
-│   └── erd.png
-├── data/
+│   
+├── csv/
 │   └── *.csv
 ├── sql/
-│   ├── ddl/
-│   │   ├── create_tables.sql
-│   │   ├── load_data.sql
-│   │   └── create_indexes.sql
-│   └── queries/
-│       └── a1_..., b5_..., c9_... (.sql)
-├── outputs/                    # Exported charts (PNG)
-└── docs/
-    └── analysis_workbook.pdf
+│   ├── ddl.sql
+│   │   
+│   ├── Module A - Revenue & Sales Performance/
+|   |    └── A*_query_name.sql
+|   |
+|   ├── Module B - Customer Behaviour & Retention
+|   |   └── B*_query_name.sql
+|   |
+│   └── Module C - Production & Operations
+|       └── C*_query_name.sql   
+└── outputs/                    # Exported charts (PNG)
+ 
 ```
 
-`credentials.env` (your real login) is created locally and is **not** part of the repository.
+`credentials.env` is created locally and is **not** part of the repository.
 
 ---
 
