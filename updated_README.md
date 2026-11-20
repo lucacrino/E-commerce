@@ -251,4 +251,4 @@ DB_PASSWORD=your_password
 
 ---
 
-*MSc Management Engineering · BI & Data Analytics Portfolio · Data is synthetic and generated for educational purposes*
+*Data is synthetic and generated for analytical purposes*
