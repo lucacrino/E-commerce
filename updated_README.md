@@ -13,7 +13,6 @@ End-to-end SQL portfolio project on a European e-commerce dataset
 - [Project Overview](#project-overview)
 - [Schema & ERD](#schema-erd)
 - [Dataset Overview](#dataset-overview)
-- [Data Quality Notes](#data-quality-notes)
 - [Analyses & SQL Techniques](#analyses-sql-techniques)
 - [Python Pipeline & Visualisations](#python-pipeline)
 - [Key Findings](#key-findings)
@@ -28,7 +27,7 @@ End-to-end SQL portfolio project on a European e-commerce dataset
 
 End-to-end SQL analytics on a synthetic European e-commerce platform.
 The dataset spans 2021–2024, covers 8 countries, 12 product categories,
-52 suppliers and 1,000 customers. Analyses range from revenue time-series
+52 suppliers and 1000 customers. Analyses range from revenue time-series
 and customer segmentation to cohort retention and RFM scoring — all written
 in plain PostgreSQL.
 
@@ -41,8 +40,6 @@ The schema follows a star/snowflake hybrid. `orders` is the central fact
 table, joined to `customers`, `order_items`, and ultimately `products` →
 `categories` + `suppliers`.
 
-<!-- Add ERD image here -->
-![ERD](assets/erd.png)
 
 ---
 
@@ -59,17 +56,6 @@ table, joined to `customers`, `order_items`, and ultimately `products` →
 | `order_items` | Fact | 7,500 | `order_item_id` | Bridge: orders × products |
 | `reviews` | Fact | 4,000 | `review_id` | Product ratings by customers |
 | `returns` | Fact | 1,200 | `return_id` | Return requests on line items |
-
----
-
-<a id="data-quality-notes"></a>
-## 🔍 Data Quality Notes
-
-- ![HIGH](https://img.shields.io/badge/HIGH-red?style=flat) ~40 orders reference `customer_id` values absent from customers — simulating GDPR deletions
-- ![HIGH](https://img.shields.io/badge/HIGH-red?style=flat) ~15 order_items reference `product_id` values absent from products
-- ![MED](https://img.shields.io/badge/MED-orange?style=flat) 62% of `discount_pct` and 70% of `line_discount_pct` are NULL — use `COALESCE(..., 0)`
-- ![LOW](https://img.shields.io/badge/LOW-green?style=flat) Some city names have mixed casing — apply `INITCAP(city)` in reporting queries
-- ![LOW](https://img.shields.io/badge/LOW-green?style=flat) Shipping/delivery dates are NULL for non-shipped statuses — filter by status before date arithmetic
 
 ---
 
@@ -98,8 +84,7 @@ table, joined to `customers`, `order_items`, and ultimately `products` →
 | B2 | Top spenders per country | `RANK() OVER (PARTITION BY)` |
 | B3 | Repeat vs one-time purchasers | `CASE WHEN` · CTE · segment % |
 | B4 | Days between consecutive orders | `LAG()` · date subtraction |
-| B5 | Monthly cohort retention | CTE chaining · cohort logic |
-| B6 | RFM customer segmentation | `NTILE(4)` · multi-CTE · `CASE` |
+| B5 | RFM customer segmentation | `NTILE(4)` · multi-CTE · `CASE` |
 
 </details>
 
@@ -138,12 +123,12 @@ The SQL files in `sql/queries/` remain the **single source of truth**. The noteb
 
 | Analysis | Chart type | Output |
 |----------|-----------|--------|
-| B5 · Cohort retention | Heatmap | `outputs/b5_cohort_retention.png` |
-| A3 · Rolling revenue | Line | `outputs/a3_rolling_revenue.png` |
-| A5 · Pareto by category | Bar + cumulative line | `outputs/a5_pareto_category.png` |
-| B6 · RFM segments | Bar | `outputs/b6_rfm_segments.png` |
-| C3 · Return rate by category | Horizontal bar | `outputs/c3_return_rate.png` |
-| C6 · Rating drift | Multi-line | `outputs/c6_rating_drift.png` |
+| A3 · Rolling revenue | Line | `outputs/monthly_revenue.png` |
+| A5 · Pareto by category | Bar + cumulative line | `outputs/pareto_analysis.png` |
+| B6 · RFM segments | Bar | `outputs/customer_rfm_segmentation.png` |
+| C1 · Top Products | Bar + line | `outputs/top_products.png` |
+| C3 · Return rate by category | Horizontal bar | `outputs/return_rate.png` |
+
 
 <!-- Embed the best 3-4 charts below once exported, for example: -->
 <!-- ![Cohort retention](outputs/b5_cohort_retention.png) -->
