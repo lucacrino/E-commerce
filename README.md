@@ -110,13 +110,13 @@ table, joined to `customers`, `order_items`, and ultimately `products` →
 <a id="python-pipeline"></a>
 ## 🐍 Python Pipeline & Visualisations
 
-The SQL files in `sql/queries/` remain the **single source of truth**. The notebook `analysis.ipynb` connects to the PostgreSQL database, runs those files, and turns each result into a DataFrame and a chart. No query logic is duplicated in Python.
+The SQL files in `sql/` remain the **single source of truth**. The notebook `sql_ecommerce_analysis.ipynb` connects to the PostgreSQL database, runs those files and turns each result into a DataFrame and a chart. No query logic is duplicated in Python.
 
 **How it works**
 
 1. **Secure connection** — credentials are stored in a local `credentials.env` file (never committed) and read with `python-dotenv`. A SQLAlchemy engine is built once and reused.
 2. **Automatic loading** — every `.sql` file in `sql/queries/` is discovered with `pathlib` and loaded into a dictionary of DataFrames, keyed by file name (`dfs["b5_cohort_retention"]`).
-3. **Chart per analysis** — each analysis uses the chart type that fits its data (heatmap, line, bar, Pareto), styled with Seaborn and Matplotlib.
+3. **Chart per analysis** — each analysis uses the chart type that fits its data (line, bar, Pareto), styled with Seaborn and Matplotlib.
 4. **Export** — every chart is saved as a PNG in `outputs/`.
 
 **Selected charts**
@@ -221,7 +221,7 @@ DB_PASSWORD=your_password
 
 > ⚠️ Never upload `credentials.env` to GitHub. Only `credentials_example.env` (with fake values) belongs in the repository.
 
-**Step 3 — Run the notebook.** Open `analysis.ipynb`, make sure it sits in the repository's main folder (so the `sql/queries/` path resolves), and use **Kernel → Restart & Run All**. The charts are saved in `outputs/`.
+**Step 3 — Run the notebook.** Open `sql_ecommerce_analysis.ipynb`, make sure it sits in the repository's main folder (so the `sql/` path resolves), and use **Kernel → Restart & Run All**. The charts are saved in `outputs/`.
 
 ---
 
