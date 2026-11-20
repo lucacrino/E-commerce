@@ -150,7 +150,7 @@ The SQL files in `sql/queries/` remain the **single source of truth**. The noteb
 ## 📁 Repository Structure
 
 ```
-ecommerce-sql-analytics/
+E-commerce/
 ├── README.md
 ├── sql_ecommerce_analysis.ipynb              # Python pipeline: SQL → DataFrames → charts
 ├── credentials_example.env                   # Template for database credentials
