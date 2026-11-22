@@ -171,9 +171,6 @@ E-commerce/
 └── outputs/                                  # Exported charts (.png)
  
 ```
-
-`credentials.env` is created locally and is **not** part of the repository.
-
 ---
 
 <a id="how-to-run"></a>
