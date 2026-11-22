@@ -98,10 +98,10 @@ table, joined to `customers`, `order_items`, and ultimately `products` →
 | C3 | Return rate by category & reason | multi-CTE · `RANK() OVER()` · `GROUP BY` |
 | C4 | Supplier performance | multi-CTE · `DENSE_RANK()` |
 | C5 | Shipping method efficiency | `COUNT(DISTINCT)` · CTE |
-| C6 | Product rating drift over time | `ROWS BETWEEN` · `PARTITION BY` |
-| C7 | Inventory risk — slow movers | `PERCENTILE_CONT` · `NTILE` |
-| C8 | Full data quality audit | `UNION ALL` · anti-join · logic checks |
-| C9 | Refund value at risk by supplier | multi-CTE · rolling `SUM` · rank |
+| C6 | Product rating | `DATE_TRUNC()` · `AVG() OVER(PARTITION BY)` |
+| C7 | Inventory risk | `PERCENTILE_CONT()` · `DENSE_RANK() OVER(ORDER BY)` |
+| C8 | Data quality audit | `UNION ALL` · `ABS()` |
+| C9 | Refund value at risk by supplier | `SUM() OVER()` · `DENSE_RANK()` · multi-CTE |
 
 </details>
 
