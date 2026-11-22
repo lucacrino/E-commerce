@@ -213,7 +213,7 @@ DB_USER=your_user
 DB_PASSWORD=your_password
 ```
 
-> ⚠️ Never upload `credentials.env` to GitHub. Only `credentials_example.env` (with fake values) belongs in the repository.
+> ⚠️ `credentials.env` are not on GitHub. Only `credentials_example.env` (with fake values) belongs in the repository.
 
 **Step 3 — Run the notebook.** Open `sql_ecommerce_analysis.ipynb`, make sure it sits in the repository's main folder (so the `sql/` path resolves), and use **Kernel → Restart & Run All**. The charts are saved in `outputs/`.
 
