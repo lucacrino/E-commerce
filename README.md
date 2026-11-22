@@ -182,7 +182,7 @@ Prerequisites: PostgreSQL 18, psql CLI or pgAdmin / DBeaver. For the Python laye
 
 ```bash
 # 1. Clone the repo
-git clone https://github.com/lucacrino/ecommerce-sql-analytics
+git clone [https://github.com/lucacrino/ecommerce-sql-analytics](https://github.com/lucacrino/E-commerce.git)
 
 # 2. Create the database
 createdb ecommerce_portfolio
