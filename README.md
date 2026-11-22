@@ -187,15 +187,12 @@ git clone https://github.com/lucacrino/ecommerce-sql-analytics
 # 2. Create the database
 createdb ecommerce_portfolio
 
-# 3. Run DDL + load data (FK-safe order)
+# 3. Run sql/ddl.sql + load data (FK-safe order)
 psql -d ecommerce_portfolio -f sql/ddl/create_tables.sql
 psql -d ecommerce_portfolio -f sql/ddl/load_data.sql
 
-# 4. Create indexes
-psql -d ecommerce_portfolio -f sql/ddl/create_indexes.sql
-
-# 5. Run any analysis
-psql -d ecommerce_portfolio -f sql/queries/b5_cohort_retention.sql
+# 4. Run any analysis
+psql -d ecommerce_portfolio -f sql/queries/A5_revenue_contribution.sql
 ```
 
 ### 2. Python layer
