@@ -208,7 +208,7 @@ psql -d ecommerce_portfolio -f sql/queries/A5_revenue_contribution.sql
 ```
 DB_HOST=host
 DB_PORT=port_number
-DB_NAME=database_name
+DB_NAME=db_name
 DB_USER=your_user
 DB_PASSWORD=your_password
 ```
