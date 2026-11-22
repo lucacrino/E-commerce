@@ -67,11 +67,11 @@ table, joined to `customers`, `order_items`, and ultimately `products` →
 
 | # | Analysis | SQL Concepts |
 |---|----------|--------------|
-| A1 | Monthly revenue & order volume trend | `DATE_TRUNC` · `GROUP BY` · `AVG` |
-| A2 | Revenue by country and loyalty tier | multi-table JOIN · segmentation |
+| A1 | Monthly revenue & order volume trend | `EXTRACT` · `GROUP BY` · `AVG` |
+| A2 | Revenue by country and loyalty tier | multi-table JOIN · `ARRAY_POSITION` |
 | A3 | 3-month rolling revenue average | `AVG() OVER` · `ROWS BETWEEN` |
 | A4 | Discount impact on revenue | `CASE WHEN` · `COALESCE` |
-| A5 | Pareto revenue by category | `SUM() OVER` · `RANK()` · running % |
+| A5 | Pareto revenue by category | `SUM() OVER` · `DENSE_RANK()` |
 
 </details>
 
@@ -80,11 +80,11 @@ table, joined to `customers`, `order_items`, and ultimately `products` →
 
 | # | Analysis | SQL Concepts |
 |---|----------|--------------|
-| B1 | Customer lifetime value ranking | `LEFT JOIN` · `SUM` · `ORDER BY` |
-| B2 | Top spenders per country | `RANK() OVER (PARTITION BY)` |
-| B3 | Repeat vs one-time purchasers | `CASE WHEN` · CTE · segment % |
-| B4 | Days between consecutive orders | `LAG()` · date subtraction |
-| B5 | RFM customer segmentation | `NTILE(4)` · multi-CTE · `CASE` |
+| B1 | Customer lifetime value ranking | `INNER JOIN` · `ORDER BY` · `LIMIT` |
+| B2 | Top spenders per country | `DENSE_RANK() OVER (PARTITION BY)` |
+| B3 | Repeat vs one-time purchasers | `CASE WHEN` · CTE · `ARRAY_POSITION` |
+| B4 | Days between consecutive orders | `LAG() OVER()` · `PERCENTILE_CONT()` |
+| B5 | RFM customer segmentation | `NTILE(4)` · multi-CTE · `CASE WHEN` |
 
 </details>
 
@@ -93,11 +93,11 @@ table, joined to `customers`, `order_items`, and ultimately `products` →
 
 | # | Analysis | SQL Concepts |
 |---|----------|--------------|
-| C1 | Top products by revenue & margin | 3-table JOIN · derived columns |
-| C2 | Products never reviewed | `LEFT JOIN IS NULL` · anti-join |
-| C3 | Return rate by category & reason | `NULLIF` · `HAVING` · `GROUP BY` |
-| C4 | Supplier performance scorecard | multi-CTE · `DENSE_RANK()` |
-| C5 | Shipping method efficiency | date diff · conditional aggregation |
+| C1 | Top products by revenue & margin | CTE · `LIMIT` |
+| C2 | Products never reviewed | `LEFT JOIN IS NULL` · `INNER JOIN ` |
+| C3 | Return rate by category & reason | multi-CTE · `RANK() OVER()` · `GROUP BY` |
+| C4 | Supplier performance | multi-CTE · `DENSE_RANK()` |
+| C5 | Shipping method efficiency | `COUNT(DISTINCT)` · CTE |
 | C6 | Product rating drift over time | `ROWS BETWEEN` · `PARTITION BY` |
 | C7 | Inventory risk — slow movers | `PERCENTILE_CONT` · `NTILE` |
 | C8 | Full data quality audit | `UNION ALL` · anti-join · logic checks |
