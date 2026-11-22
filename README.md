@@ -187,9 +187,9 @@ git clone https://github.com/lucacrino/ecommerce-sql-analytics
 # 2. Create the database
 createdb ecommerce_portfolio
 
-# 3. Run sql/ddl.sql + load data (FK-safe order)
-psql -d ecommerce_portfolio -f sql/ddl/create_tables.sql
-psql -d ecommerce_portfolio -f sql/ddl/load_data.sql
+# 3. Run sql/ddl.sql + load data csv/*.csv
+psql -d ecommerce_portfolio -f sql/ddl.sql
+
 
 # 4. Run any analysis
 psql -d ecommerce_portfolio -f sql/queries/A5_revenue_contribution.sql
