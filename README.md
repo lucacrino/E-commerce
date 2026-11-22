@@ -115,7 +115,7 @@ The SQL files in `sql/` remain the **single source of truth**. The notebook `sql
 **How it works**
 
 1. **Secure connection** — credentials are stored in a local `credentials.env` file (never committed) and read with `python-dotenv`. A SQLAlchemy engine is built once and reused.
-2. **Automatic loading** — every `.sql` file in `sql/queries/` is discovered with `pathlib` and loaded into a dictionary of DataFrames, keyed by file name (`dfs["b5_cohort_retention"]`).
+2. **Automatic loading** — the `.sql` file in `sql/queries/` is discovered with `pathlib` and loaded into a dictionary of DataFrames, keyed by file name (`dfs["b5_cohort_retention"]`).
 3. **Chart per analysis** — each analysis uses the chart type that fits its data (line, bar, Pareto), styled with Seaborn and Matplotlib.
 4. **Export** — every chart is saved as a PNG in `outputs/`.
 
