@@ -176,7 +176,7 @@ E-commerce/
 <a id="how-to-run"></a>
 ## ⚙️ How to Run
 
-Prerequisites: PostgreSQL 18, psql CLI or pgAdmin / DBeaver. For the Python layer: Jupyter (e.g. via Anaconda).
+Prerequisites: PostgreSQL 18, psql CLI or pgAdmin / DBeaver. For the Python layer: Jupyter Notebook (e.g. via Anaconda).
 
 ### 1. SQL layer
 
