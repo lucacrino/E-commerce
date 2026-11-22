@@ -125,7 +125,7 @@ The SQL files in `sql/` remain the **single source of truth**. The notebook `sql
 |----------|-----------|--------|
 | A3 · Rolling revenue | Line | `outputs/monthly_revenue.png` |
 | A5 · Pareto by category | Bar + cumulative line | `outputs/pareto_analysis.png` |
-| B6 · RFM segments | Bar | `outputs/customer_rfm_segmentation.png` |
+| B5 · RFM segments | Bar | `outputs/customer_rfm_segmentation.png` |
 | C1 · Top Products | Bar + line | `outputs/top_products.png` |
 | C3 · Return rate by category | Horizontal bar | `outputs/return_rate.png` |
 
